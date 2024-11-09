@@ -2377,3 +2377,22 @@ textarea {
 		border-bottom: 1px solid var(--color-background-contrast);
 	}
 }
+
+.copy-link {
+    position: relative;
+}
+
+.copy-link[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
