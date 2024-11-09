@@ -63,15 +63,6 @@
     },
     "card_assets": true,
     "custom": {
-      "color_scheme": {
-        "type": "select",
-        "options": [
-          "Light",
-          "Dark",
-          "System"
-        ],
-        "default": "System"
-      },
       "disqus_shortname": {
         "type": "text",
         "default": "",
