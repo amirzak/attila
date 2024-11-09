@@ -103,8 +103,9 @@
 						
 						<span class="nav-title">{{@site.title}} &copy; {{date format='YYYY'}}</span>
 						<a aria-label="RSS" href="{{@site.url}}/rss/" title="RSS"><i class="icon icon-rss" aria-hidden="true">{{> "icons/icon-rss"}}</i></a>
-						{{#if @site.twitter}}<a aria-label="Twitter" href="{{twitter_url}}" title="{{@site.twitter}}"><i class="icon icon-twitter" aria-hidden="true">{{> "icons/icon-twitter"}}</i></a>{{/if}}
-						{{#if @site.facebook}}<a aria-label="Facebook" href="{{facebook_url}}" title="{{@site.facebook}}"><i class="icon icon-facebook" aria-hidden="true">{{> "icons/icon-facebook"}}</i></a>{{/if}}
+						<a aria-label="GitHub" href="https://github.com/amirzak" title="GitHub"><i class="icon icon-github" aria-hidden="true">{{> "icons/icon-github"}}</i></a>
+						<a aria-label="X (Twitter)" href="https://x.com/amirzak6" title="X (Twitter)"><i class="icon icon-twitter" aria-hidden="true">{{> "icons/icon-twitter"}}</i></a>
+						<a aria-label="LinkedIn" href="https://www.linkedin.com/in/amirzak" title="LinkedIn"><i class="icon icon-linkedin" aria-hidden="true">{{> "icons/icon-linkedin"}}</i></a>
 					</span>
 					{{#if @site.secondary_navigation}}
 					{{navigation type="secondary"}}
