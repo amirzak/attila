@@ -1183,6 +1183,31 @@ textarea {
 	@media only screen and (max-width: $breakpoint-medium) {
 		transform: translate3d(0,-100%,0);
 	}
+
+	.nav-social {
+		display: flex;
+		gap: 2rem;
+		margin-right: 2rem;
+		padding: 1rem 0;
+		font-size: 1.6em;
+		line-height: 2rem;
+		color: var(--color-content-secondary);
+		transition: color linear 0.1s;
+
+		&:focus,
+		&:hover {
+			color: var(--color-content-main);
+			
+			@media only screen and (max-width: $breakpoint-medium) {
+				color: #C4C7CC;
+			}
+		}
+
+		.icon {
+			width: 2rem;
+			height: 2rem;
+		}
+	}
 }
 
 .menu-active .nav-header {
@@ -1226,7 +1251,13 @@ textarea {
 	.inner {
 		display: flex;
 		justify-content: space-between;
-	}
+		align-items: center;
+		
+		// Left side - menu
+		.nav-menu {
+		  margin-right: auto; // Pushes menu to left
+		}
+	  }
 
 	a {
 		position: relative;
@@ -1282,6 +1313,10 @@ textarea {
 		}
 
 		.nav-search {
+			display: none;
+		}
+
+		.nav-social {
 			display: none;
 		}
 	}
